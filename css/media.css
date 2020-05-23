@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+    color:#757575;
+    margin: 0; 
+}
+ul li{
+    list-style-type:none;  
+}
+a{
+    text-decoration: none;
+    color:#757575;
+}
+.active{
+    color: #afafaf !important;
+}
+/* 以上为全局设置--------------------------------- */
+
+.section-1{
+    background-color: #B2C5CC;
+    height:300px;
+}
+
+.sm-container {
+    width: 100%;
+    height: 1.5rem;
+    background-color: #B2C5CC;
+    color: #fff;
+    position: relative;
+}
+
+/* 默认显示手机端 */
+.head-title {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #7da7ae;
+    position: relative;
+    z-index: 9;
+}
+#btn {
+    z-index:99;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    margin: auto;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 2px solid #B2C5CC;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.nav-item {
+    z-index: 1;
+    position: absolute;
+    top: 1.5rem;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background:  #7da7ae;
+    transition: all .5s;
+}
+.nav-item li a {
+    color: #fff;
+    display: block;
+    line-height: 1.2rem;
+    font-size: 0.6rem;
+    border-bottom: 1px solid #eee;
+}
+.logo{
+    padding-top:30px;
+    text-align: center;
+}
+.logo p{
+    font-size: .6rem;
+    line-height: 2rem;
+    color: #fff;
+}
+.start{
+    background-color: #fff;
+    padding: 3px 20px;
+    font-size: 0.5rem;
+}
+/* section-2---------------------------------- */
+.nav-2 ul{
+    width: 100%;
+    display:flex;
+    justify-content:space-around;
+    border-bottom: .2px solid #ccc;
+}
+
+.nav-2-item{
+    display: inline;
+    font-size: .5rem;
+    line-height: 2rem;
+    color:#bababa ;
+}
+
+/* section-3---------------------------------- */
+.section-3{
+    text-align: center;  
+}
+.section-3 h4{
+    line-height: 2rem;
+    margin-top:1rem
+}
+.section-3 div{
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    font-size: .6rem;
+    line-height: 1.6rem;
+    text-align:justify;
+    padding-bottom:3rem;
+}
+/* section-4---------------------------------- */
+.section-4{
+    background-color: #f4f4f4;
+    text-align: center;  
+    font-size: .8rem;
+    line-height: 1.5rem;
+}
+
+.section-4 p{
+    line-height: 1.2rem;
+    /* margin-top:1rem */
+}
+/* section-5---------------------------------- */
+.section-5{
+    background: url("../img/bg.jpg");
+    width: 100%;
+}
+.wrap-5{
+    width:90%;
+    margin:0 auto;
+    padding: 2rem 0;
+}
+.wrap-5 p{
+    font-size: .8rem;
+    line-height: 1.5rem;  
+}
+.pic-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pic-list img{
+    width:48%;
+    margin:5px 0;
+}
+/* section-6---------------------------------- */
+.section-6{
+    text-align: center;
+    font-size: .8rem;  
+    background-color:#f1f1f1 ;
+}
+.section-6 p{
+    line-height: 1.5rem;
+}
+
+/* ipad适配 */
+@media (min-width: 768px) {
+    /* section-1----------------- */
+    .head-title,
+    #btn {
+        display: none;
+    }
+    .nav-item {
+        position: static;
+        background: none;
+        height: 1.5rem;
+        line-height: 2rem;
+    }
+    .nav-item li {
+        display: inline-block;
+        padding: 0 20px;
+    }
+    .nav-item ul a {
+        border: none;
+        line-height: 1.5rem;
+        font-size: 0.6rem;
+        color:#757575;
+    }
+    /* section-4----------------- */
+    .section-4{
+        padding:10px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* section-5----------------- */
+    .pic-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .pic-list img{
+        width:32%;
+    }
+
+
+}
